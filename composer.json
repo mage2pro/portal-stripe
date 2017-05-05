@@ -21,4 +21,5 @@
 		,"Magento extension"
 		,"Stripe"
 	]
+	,"df": {"cms": {"name": "Stripe"}}
 }

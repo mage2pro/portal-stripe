@@ -1,2 +1,2 @@
-The extension integrates your Magento 2 store with the <a href="https://stripe.com">Stripe</a> payment service.
-<br/>The source is on GitHub: <a href="https://github.com/mage2pro/stripe">https://github.com/mage2pro/stripe</a>
+The extension integrates your Magento 2 store with the **[Stripe](https://stripe.com)** payment service.
+<br/>The source is on GitHub: https://github.com/mage2pro/stripe

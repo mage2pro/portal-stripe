@@ -1,3 +1,2 @@
-<?php /** @var \Dfe\Cms\Block $block */ ?>
 The extension integrates your Magento 2 store with the <a href="https://stripe.com">Stripe</a> payment service.
 <br/>The source is on GitHub: <a href="https://github.com/mage2pro/stripe">https://github.com/mage2pro/stripe</a>

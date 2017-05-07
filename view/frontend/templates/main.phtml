@@ -1,2 +1,11 @@
+<h1>Stripe payment extension for Magento 2</h1>
 The extension integrates your Magento 2 store with the <b><a href='https://stripe.com' target='_blank'>Stripe</a></b> payment service.
 <br/>The source is on GitHub: <a href='https://github.com/mage2pro/stripe' target='_blank'>https://github.com/mage2pro/stripe</a>
+<h2>How to install?</h2>
+<script>require(['Df_Core/thirdParty/HighlightJs/main'], function(hljs) {hljs.initHighlighting();});</script>
+<pre><code class='bash'>
+composer require mage2pro/stripe:*
+bin/magento setup:upgrade
+rm -rf pub/static/* && bin/magento setup:static-content:deploy &lt;locale, e.g.: en_GB&gt;
+rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
+</code></pre>

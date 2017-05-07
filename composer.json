@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/cms-stripe"
-	,"version": "0.0.7"
+	,"version": "0.0.8"
 	,"description": "A content for the stripe.mage2.pro website."
 	,"type": "magento2-module"
 	,"homepage": "https://mage2.pro"
@@ -11,8 +11,15 @@
 		"homepage": "https://mage2.pro/users/dmitry_fedyuk",
 		"role": "Developer"
 	}]
-	,"require": {"mage2pro/cms": ">=0.2.2", "mage2pro/core": ">=2.6.5"}
+	,"require": {"mage2pro/cms": ">=0.2.3", "mage2pro/core": ">=2.6.5"}
 	,"autoload": {"files": ["registration.php"], "psr-4": {"Dfe\\Cms\\": ""}}
+	,"df": {"cms": {
+		"html": {
+			"description": "Open-source and hosted on GitHub"
+			,"title": "Stripe payment extension for Magento 2"
+		}
+		,"plugin": {"title": "stripe.mage2.pro"}
+	}}
 	,"keywords": [
 		"CMS"
 		,"eCommerce"
@@ -21,5 +28,4 @@
 		,"Magento extension"
 		,"Stripe"
 	]
-	,"df": {"cms": {"title": "stripe.mage2.pro"}}
 }

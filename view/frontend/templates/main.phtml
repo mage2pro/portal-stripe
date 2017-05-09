@@ -2,7 +2,16 @@
 The extension integrates your Magento 2 store with the <b><a href='https://stripe.com' target='_blank'>Stripe</a></b> payment service.
 <br/>The source is on GitHub: <a href='https://github.com/mage2pro/stripe' target='_blank'>https://github.com/mage2pro/stripe</a>
 <h2>How to install?</h2>
-<script>require(['Df_Core/thirdParty/HighlightJs/main'], function(hljs) {hljs.initHighlighting();});</script>
+<script>require([
+	'Df_Core/thirdParty/HighlightJs/main'
+	,'https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.js'
+], function(hljs, anchorJS) {
+	hljs.initHighlighting();
+	// 2017-05-09
+	// https://www.bryanbraun.com/anchorjs/#installation
+	// https://www.bryanbraun.com/anchorjs/#dont-run-it-too-late
+	(new anchorJS()).add('h2');
+});</script>
 <pre><code class='bash'>composer require mage2pro/stripe:*
 bin/magento setup:upgrade
 rm -rf pub/static/* && bin/magento setup:static-content:deploy &lt;locale, e.g.: en_GB&gt;

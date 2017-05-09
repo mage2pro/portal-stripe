@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<page xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	layout='dfe-cms'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+<!-- 2017-05-09
+«How to add some HTML <meta> tags to a page via a layout.xml file?» https://mage2.pro/t/3921
+ -->
+	<head><meta name='author' content='Dmitry Fedyuk, Mage2.PRO'/></head>
+</page>

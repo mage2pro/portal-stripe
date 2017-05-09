@@ -6,5 +6,8 @@
 <!-- 2017-05-09
 «How to add some HTML <meta> tags to a page via a layout.xml file?» https://mage2.pro/t/3921
  -->
-	<head><meta name='author' content='Dmitry Fedyuk, Mage2.PRO'/></head>
+	<head>
+		<meta name='author' content='Dmitry Fedyuk, Mage2.PRO'/>
+		<meta name='description' content='Open-source and hosted on GitHub'/>
+	</head>
 </page>

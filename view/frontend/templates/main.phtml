@@ -2,14 +2,23 @@
 <nav>
 	<ul>
 		<li class='logo'><a href='/'/></li>
-		<li><a href='https://mage2.pro/c/extensions/stripe' target='_blank'>Community</a></li>
-		<li><a href='customers'>Customers</a></li>
+		<li><a
+			href='https://mage2.pro/c/extensions/stripe' target='_blank'
+			title='Have a question or an issue? Post it here, and I will answer it.'
+		>Community</a></li>
+		<li><a
+			href='customers' title='The list of websites are already using this extension.'
+		>Customers</a></li>
+		<li class='version'><a
+			href='https://github.com/mage2pro/stripe/releases'
+			target='_blank'
+			title="Check the extension's version history."
+		>v<?= df_github_repo_version('mage2pro/stripe'); ?></a></li>
 	</ul>
 </nav>
 <h1>Stripe payment extension for Magento 2</h1>
 The extension integrates your Magento 2 store with the <b><a href='https://stripe.com' target='_blank'>Stripe</a></b> payment service.
 <br/>The source is on GitHub: <a href='https://github.com/mage2pro/stripe' target='_blank'>https://github.com/mage2pro/stripe</a>
-<br/>The latest version is <b><?= df_github_repo_version('mage2pro/stripe'); ?></b>
 <h2 id='installation'>Installation</h2>
 <pre><code class='bash'>composer require mage2pro/stripe:*
 bin/magento setup:upgrade

@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/cms-stripe"
-	,"version": "0.1.8"
+	,"version": "0.1.9"
 	,"description": "A content for the stripe.mage2.pro website."
 	,"type": "magento2-module"
 	,"homepage": "https://mage2.pro"

@@ -1,3 +1,4 @@
+<?php /** @var \Dfe\Cms\Block $block */ ?>
 <nav>
 	<ul>
 		<li><a href='page2'>Link 1</a></li>
@@ -9,9 +10,24 @@
 The extension integrates your Magento 2 store with the <b><a href='https://stripe.com' target='_blank'>Stripe</a></b> payment service.
 <br/>The source is on GitHub: <a href='https://github.com/mage2pro/stripe' target='_blank'>https://github.com/mage2pro/stripe</a>
 <br/>The latest version is <b><?= df_github_repo_version('mage2pro/stripe'); ?></b>
-<h2 id='installation'>How to install?</h2>
+<h2 id='installation'>Installation</h2>
 <pre><code class='bash'>composer require mage2pro/stripe:*
 bin/magento setup:upgrade
 rm -rf pub/static/* && bin/magento setup:static-content:deploy &lt;locale, e.g.: en_GB&gt;
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
 </code></pre>
+<h2 id='settings'>Settings</h2>
+<p>Open the «<b>Stores</b>» → «<b>Configuration</b>» section inside the Magento 2 backend.</p>
+<img
+	alt='The «Stores» → «Configuration» section in the Magento 2 backend'
+	src='<?php echo $block->getViewFileUrl('Dfe_CmsStripe::i/magento-settings-stores-configuration.png')?>'
+/>
+<p>The Stripe extension settings are located in the «<b>Mage2.PRO</b>» → «<b>Payment</b>» → «<b>Stripe</b>» section.</p>
+<img
+	alt='The «Mage2.PRO» → «Payment» → «Stripe» section in the Magento 2 backend'
+	src='<?php echo $block->getViewFileUrl('Dfe_CmsStripe::i/magento-settings-mage2.pro-payment-stripe.png')?>'
+/>
+<img
+	alt='The «Stripe» extension settings in the Magento 2 backend'
+	src='<?php echo $block->getViewFileUrl('Dfe_CmsStripe::i/stripe-magento-extension-settings.png')?>'
+/>

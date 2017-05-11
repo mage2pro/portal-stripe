@@ -1,0 +1,28 @@
+<h1>Settings</h1>
+<p>Open the «<b>Stores</b>» → «<b>Configuration</b>» section inside the Magento 2 backend.</p>
+<?= $this->img(
+	'magento-settings-stores-configuration.png'
+	,'The «Stores» → «Configuration» section in the Magento 2 backend'
+) ?>
+<p>The Stripe extension settings are located in the «<b>Mage2.PRO</b>» → «<b>Payment</b>» → «<b>Stripe</b>» section.</p>
+<?= $this->img(
+	'magento-settings-mage2.pro-payment-stripe.png'
+	,'The «Mage2.PRO» → «Payment» → «Stripe» section in the Magento 2 backend'
+) ?>
+<?= $this->img(
+	'stripe-magento-extension-settings.png', 'The «Stripe» extension settings in the Magento 2 backend'
+) ?>
+<table class='settings'><tbody>
+<?php
+	foreach (df_module_json(dfe_cms_module_name(), 'options') as $o) {
+		/** @var array(string => string ) $o */
+		$i = $o['image']; $t= $o['title'];
+		?>
+<tr><td><h3 id='option.<?= $i; ?>'><?= $t; ?></h3></td><td>
+<?= $this->img("options/$i.png", "The «Stripe» → «{$t}» option.") ?>
+<div><?= $o['description'] ?></div>
+</td></tr>
+		<?php
+	}
+?>
+</tbody></table>

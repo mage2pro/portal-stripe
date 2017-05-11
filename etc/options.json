@@ -17,22 +17,22 @@
 	,{
 		"title": "Test Secret Key"
 		,"image": "test-secret-key"
-		,"description": ""
+		,"description": "Your API keys are available through the Dashboard.<br/>If you cannot see your API keys in the Dashboard, this means that you are not an administrator for the account, and have only Read & Write or Read Only access. You will need to contact your Stripe account's administrator to request access to view the API keys."
 	}
 	,{
 		"title": "Test Publishable Key"
 		,"image": "test-publishable-key"
-		,"description": "STUB"
+		,"description": "Your API keys are available through the Dashboard.<br/>The publishable key is meant solely to identify your account with Stripe, it is not a secret."
 	}
 	,{
 		"title": "Live Secret Key"
 		,"image": "live-secret-key"
-		,"description": "STUB"
+		,"description": "Your API keys are available through the Dashboard.<br/>Keep your secret API key confidential.<br/>Your account's secret API key can perform any API request to Stripe without restriction."
 	}
 	,{
 		"title": "Live Publishable Key"
 		,"image": "live-publishable-key"
-		,"description": "STUB"
+		,"description": "Your API keys are available through the Dashboard.<br/>The publishable key is meant solely to identify your account with Stripe, it is not a secret."
 	}
 	,{
 		"title": "Webhook"

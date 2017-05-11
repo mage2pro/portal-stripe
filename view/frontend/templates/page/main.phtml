@@ -23,80 +23,16 @@ rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
 	'stripe-magento-extension-settings.png', 'The «Stripe» extension settings in the Magento 2 backend'
 ) ?>
 <table class='settings'><tbody>
-<tr><td><h3 id='option.enable'>Enable?</h3></td><td>
-<?= $this->img('options/enable.png', 'The «Stripe» → «Enable» option.') ?>
-<div>Using this checkbox you can <b>enable</b> or <b>disable</b> the extension.</div>
+<?php
+	foreach (df_module_json(dfe_cms_module_name(), 'options') as $o) {
+		/** @var array(string => string ) $o */
+		$i = $o['image']; $t= $o['title'];
+		?>
+<tr><td><h3 id='option.<?= $i; ?>'><?= $t; ?></h3></td><td>
+<?= $this->img("options/$i.png", "The «Stripe» → «{$t}» option.") ?>
+<div><?= $o['description'] ?></div>
 </td></tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
-<tr>
-	<td>STUB</td>
-	<td>STUB</td>
-</tr>
+		<?php
+	}
+?>
 </tbody></table>

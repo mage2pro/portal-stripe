@@ -1,0 +1,102 @@
+[
+	{
+		"title": "Enable?"
+		,"image": "enable"
+		,"description": "Using this checkbox you can <b>enable</b> or <b>disable</b> the extension."
+	}
+	,{
+		"title": "Title"
+		,"image": "title"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Test Mode?"
+		,"image": "test-mode"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Test Secret Key"
+		,"image": "test-secret-key"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Test Publishable Key"
+		,"image": "test-publishable-key"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Live Secret Key"
+		,"image": "live-secret-key"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Live Publishable Key"
+		,"image": "live-publishable-key"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Webhook"
+		,"image": "webhook"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Payment Currency"
+		,"image": "payment-currency"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Payment Action for a New Customer"
+		,"image": "payment-action-for-a-new-customer"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Payment Action for a Returned Customer"
+		,"image": "payment-action-for-a-returned-customer"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Description"
+		,"image": "description"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Dynamic statement descripor"
+		,"image": "dynamic-statement-descripor"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Metadata"
+		,"image": "metadata"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Require the cardholder's name?"
+		,"image": "require-the-cardholder-name"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Require the billing address?"
+		,"image": "require-the-billing-address"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Minimum Order Total"
+		,"image": "minimum-order-total"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Maximum Order Total"
+		,"image": "maximum-order-total"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Country Restriction"
+		,"image": "country-restriction"
+		,"description": "STUB"
+	}
+	,{
+		"title": "Countries"
+		,"image": "countries"
+		,"description": "STUB"
+	}
+]

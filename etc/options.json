@@ -67,36 +67,36 @@
 	,{
 		"title": "Metadata"
 		,"image": "metadata"
-		,"description": "STUB"
+		,"description": "Stripe supports adding metadata to the charges.<br/>Metadata is for your use only: it isn't shown to customers.<br/>Through metadata, you can associate a meaningful to you information with Stripe activity.<br/>Any metadata you include will be viewable in the Dashboard (e.g., when looking at the page for an individual charge), and will also be available in common reports and exports.<br/>As an example, your store's order ID can be attached to the charge used to pay for that order.<br/>Doing so allows you, your accountant, or your finance team to easily reconcile charges in Stripe to orders in your system."
 	}
 	,{
 		"title": "Require the cardholder's name?"
 		,"image": "require-the-cardholder-name"
-		,"description": "STUB"
+		,"description": "Stripe does not require it, but you can require it from your customers."
 	}
 	,{
 		"title": "Require the billing address?"
 		,"image": "require-the-billing-address"
-		,"description": "STUB"
+		,"description": "If <b>checked</b>, Magento will require the billing address. It is the default Magento behaviour.<br/>If <b>unchecked</b>, Magento will not require the billing address, and even will not ask for it."
 	}
 	,{
 		"title": "Minimum Order Total"
 		,"image": "minimum-order-total"
-		,"description": "STUB"
+		,"description": "The Stripe payment method will not be shown to a customer with a lower order amount."
 	}
 	,{
 		"title": "Maximum Order Total"
 		,"image": "maximum-order-total"
-		,"description": "STUB"
+		,"description": "The Stripe payment method will not be shown to a customer with a higher order amount."
 	}
 	,{
 		"title": "Country Restriction"
 		,"image": "country-restriction"
-		,"description": "STUB"
+		,"description": "The 3 options are available: <b>No</b>, <b>Whitelist</b>, and <b>Blacklist</b>."
 	}
 	,{
 		"title": "Countries"
 		,"image": "countries"
-		,"description": "STUB"
+		,"description": "Customers from which countries can (or can not) use the method?"
 	}
 ]

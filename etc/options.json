@@ -12,7 +12,7 @@
 	,{
 		"title": "Test Mode?"
 		,"image": "test-mode"
-		,"description": "The test mode allows you to test your integration thoroughly before taking it live. <br/>The test and live modes were designed to function almost identically, with a few necessary differences:<ul><li>In test mode, credit card transactions are not processed through the actual card networks and only our test card numbers can be used.</li><li>Test mode allows you to fake having a Stripe balance in order to test (fake) transfers.</li><li>Alternative payment methods such as Bitcoin have a more nuanced flow in live mode, with more steps required than those in test mode.</li><li>Disputes also have a more nuanced flow in live mode, and a simpler testing process.</li></ul>"
+		,"description": "The test mode allows you to test your integration thoroughly before taking it live. <br/>All of Stripe's features are available in test mode, though no live charges using the card networks can be created.<br/>The test and live modes were designed to function almost identically, with a few necessary differences:<ul><li>In test mode, credit card transactions are not processed through the actual card networks and only our test card numbers can be used.</li><li>Test mode allows you to fake having a Stripe balance in order to test (fake) transfers.</li><li>Alternative payment methods such as Bitcoin have a more nuanced flow in live mode, with more steps required than those in test mode.</li><li>Disputes also have a more nuanced flow in live mode, and a simpler testing process.</li></ul>"
 	}
 	,{
 		"title": "Test Secret Key"
@@ -37,12 +37,12 @@
 	,{
 		"title": "Webhook"
 		,"image": "webhook"
-		,"description": "STUB"
+		,"description": "This URL is used to notify your store about events that happen in a Stripe account.<br/>Set it in the <a href='https://dashboard.stripe.com/account/webhooks' target='_blank'>webhooks settings</a> section of the Dashboard.<br/>Before going live, test that your webhook is working properly."
 	}
 	,{
 		"title": "Payment Currency"
 		,"image": "payment-currency"
-		,"description": "STUB"
+		,"description": "This option defines the currency which will be used to interact with Stripe.<br/>You can choose one of the following options:<ul><li>Your base Magento currency.</li><li>The current order currency.</li><li>An exact currency picked from the dropdown here.</li></ul>"
 	}
 	,{
 		"title": "Payment Action for a New Customer"

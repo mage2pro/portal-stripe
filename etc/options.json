@@ -7,7 +7,7 @@
 	,{
 		"title": "Title"
 		,"image": "title"
-		,"description": "STUB"
+		,"description": "The specified title will used everywhere on the store's frontend:<ul><li>for the Stripe's payment form on the checkout screen;</li><li>in the sales documents;</li><li>in the customer's account;</li><li>in the transactional emails.</li></ul>"
 	}
 	,{
 		"title": "Test Mode?"

@@ -47,12 +47,12 @@
 	,{
 		"title": "Payment Action for a New Customer"
 		,"image": "payment-action-for-a-new-customer"
-		,"description": "STUB"
+		,"description": "<p>A customer is regarded as <b>new</b>, if he does not have any order in the «<b>Completed</b>» or «<b>Processing</b>» state.</p><p>The 3 actions are available: <b>Authorize</b>, <b>Capture</b>, and <b>Review</b>.</p><p>Stripe supports separately authorizing and capturing money on cards. It’s like two-phase commit for payments. This makes some new payment flows possible—most notably, capturing funds only when an order is ready for shipping.</p><p>In addition to capturing the full amount, you can also capture less than the amount originally authorized by passing an amount parameter. An authorization left uncaptured for 7 days will be automatically reversed.</p><p>There are some caveats: occasionally, a bank will show an authorization as an actual charge. As such, using this in cases where the customer doesn’t expect to be charged can be confusing. It’s worth thinking carefully about your use-case. Stripe does not charge any fees on uncaptured charges, and fees after you capture are the same as any other charge.</p>"
 	}
 	,{
 		"title": "Payment Action for a Returned Customer"
 		,"image": "payment-action-for-a-returned-customer"
-		,"description": "STUB"
+		,"description": "The 3 actions are available:<ul><li>Authorize</li><li>Capture</li><li>Review</li></ul>"
 	}
 	,{
 		"title": "Description"

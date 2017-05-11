@@ -12,12 +12,12 @@
 	,{
 		"title": "Test Mode?"
 		,"image": "test-mode"
-		,"description": "STUB"
+		,"description": "The test mode allows you to test your integration thoroughly before taking it live. <br/>The test and live modes were designed to function almost identically, with a few necessary differences:<ul><li>In test mode, credit card transactions are not processed through the actual card networks and only our test card numbers can be used.</li><li>Test mode allows you to fake having a Stripe balance in order to test (fake) transfers.</li><li>Alternative payment methods such as Bitcoin have a more nuanced flow in live mode, with more steps required than those in test mode.</li><li>Disputes also have a more nuanced flow in live mode, and a simpler testing process.</li></ul>"
 	}
 	,{
 		"title": "Test Secret Key"
 		,"image": "test-secret-key"
-		,"description": "STUB"
+		,"description": ""
 	}
 	,{
 		"title": "Test Publishable Key"

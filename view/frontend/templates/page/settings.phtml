@@ -14,7 +14,7 @@
 ) ?>
 <table class='settings'><tbody>
 <?php
-	foreach (df_module_json(dfe_cms_module_name(), 'options') as $o) {
+	foreach (df_module_json(dfe_portal_module_name(), 'options') as $o) {
 		/** @var array(string => string ) $o */
 		$i = $o['image']; $t= $o['title'];
 		?>

@@ -1,9 +1,9 @@
 {
-	"name": "mage2pro/cms-stripe"
-	,"version": "0.2.4"
-	,"description": "A content for the stripe.mage2.pro website."
+	"name": "mage2pro/portal-stripe"
+	,"version": "0.3.0"
+	,"description": "The stripe.mage2.pro website."
 	,"type": "magento2-module"
-	,"homepage": "https://mage2.pro"
+	,"homepage": "https://stripe.mage2.pro"
 	,"license": "proprietary"
 	,"authors": [{
 		"name": "Dmitry Fedyuk",
@@ -11,9 +11,9 @@
 		"homepage": "https://mage2.pro/users/dmitry_fedyuk",
 		"role": "Developer"
 	}]
-	,"require": {"mage2pro/cms": ">=0.3.7", "mage2pro/core": ">=2.6.18"}
-	,"autoload": {"files": ["registration.php"], "psr-4": {"Dfe\\Cms\\": ""}}
-	,"df": {"cms": {
+	,"require": {"mage2pro/portal": ">=0.4.0", "mage2pro/core": ">=2.6.18"}
+	,"autoload": {"files": ["registration.php"], "psr-4": {"Dfe\\PortalStripe\\": ""}}
+	,"df": {"portal": {
 		"html": {"title": "Stripe payment extension for Magento 2"}
 		,"plugin": {"title": "stripe.mage2.pro"}
 	}}
@@ -24,5 +24,6 @@
 		,"Magento 2"
 		,"Magento extension"
 		,"Stripe"
+		,"Web portal"
 	]
 }

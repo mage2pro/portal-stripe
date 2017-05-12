@@ -1,25 +1,5 @@
 <h1>Customers</h1>
-<ul>
-	<li><a href='https://www.artisanart.com'>artisanart.com</a></li>
-	<li><a href='https://www.bealesfurniture.co.uk/'>bealesfurniture.co.uk</a></li>
-	<li><a href='https://www.bicyclesquilicot.com'>bicyclesquilicot.com</a></li>
-	<li><a href='https://www.c4belts.com'>c4belts.com</a></li>
-	<li><a href='https://earthmovercu.store'>earthmovercu.store</a></li>
-	<li><a href='https://www.fevrierofficial.com/'>fevrierofficial.com</a></li>
-	<li><a href='https://gothelist.com/'>gothelist.com</a></li>
-	<li><a href='https://www.grocerydeals.com.au'>grocerydeals.com.au</a></li>
-	<li><a href='https://www.hartsfurniture.co.uk'>hartsfurniture.co.uk</a></li>
-	<li><a href='https://www.irrigationking.com'>irrigationking.com</a></li>
-	<li><a href='https://jwestfield.com/'>jwestfield.com</a></li>
-	<li><a href='https://www.londonandsurreylogco.co.uk'>londonandsurreylogco.co.uk</a></li>
-	<li><a href='https://www.masterofspices.com/'>masterofspices.com</a></li>
-	<li><a href='https://www.oohlalah.co.uk'>oohlalah.co.uk</a></li>
-	<li><a href='http://plazasport.no'>plazasport.no</a></li>
-	<li><a href='https://www.pumpunderwear.com'>pumpunderwear.com</a></li>
-	<li><a href='http://rawdogfood.website/'>rawdogfood.website</a></li>
-	<li><a href='https://ritueldefille.com'>ritueldefille.com</a></li>
-	<li><a href='https://seamlessphoto.com'>seamlessphoto.com</a></li>
-	<li><a href='https://www.sikhistore.com'>sikhistore.com</a></li>
-	<li><a href='https://www.slacktoys.com'>slacktoys.com</a></li>
-	<li><a href='http://www.whatsmode.com'>whatsmode.com</a></li>
-</ul>
+<?=
+df_tag('ul', [], df_cc_n(array_map(function(array $c) {$url = $c['url']; return df_tag('li', [],
+	df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url))
+);}, df_module_json(dfe_portal_module_name(), 'customers'))));

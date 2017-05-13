@@ -12,7 +12,7 @@
 <?= $this->img(
 	'stripe-magento-extension-settings.png', 'The «Stripe» extension settings in the Magento 2 backend'
 ) ?>
-<table class='settings'><tbody>
+<table class='content settings'><tbody>
 <?php
 	foreach (df_module_json(dfe_portal_module_name(), 'options') as $o) {
 		/** @var array(string => string ) $o */

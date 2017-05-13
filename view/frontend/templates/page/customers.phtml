@@ -22,7 +22,8 @@ df_cc_n(array_map(function(array $c) {
 	/** @var string $iso2 */ $iso2 = $c['country'];
 	/** @var string $url */ $url = $c['url'];
 	/** @var array(string => string) $m */
-	$m = df_my_local() ? dfa_select($c, ['version', 'edition']) : df_magento_version_remote($url);
+	/** 2017-05-14 @todo df_magento_version_remote($url) is too slow. Maybe it should be run by Cron. */
+	$m = dfa_select($c, ['version', 'edition']);
 	return df_tag('tr', [], df_cc_n(
 		df_tag('td', [], df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url)))
 		,df_tag('td', [], df_flag_span($iso2, $iso2))

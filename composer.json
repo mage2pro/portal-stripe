@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/portal-stripe"
-	,"version": "0.3.6"
+	,"version": "0.3.7"
 	,"description": "The stripe.mage2.pro website."
 	,"type": "magento2-module"
 	,"homepage": "https://stripe.mage2.pro"
@@ -11,7 +11,7 @@
 		"homepage": "https://mage2.pro/users/dmitry_fedyuk",
 		"role": "Developer"
 	}]
-	,"require": {"mage2pro/core": ">=2.6.21", "mage2pro/flag": ">=1.0.1", "mage2pro/portal": ">=0.4.0"}
+	,"require": {"mage2pro/core": ">=2.6.22", "mage2pro/flag": ">=1.0.1", "mage2pro/portal": ">=0.4.0"}
 	,"autoload": {"files": ["registration.php"], "psr-4": {"Dfe\\PortalStripe\\": ""}}
 	,"df": {"portal": {
 		"html": {"title": "Stripe payment extension for Magento 2"}

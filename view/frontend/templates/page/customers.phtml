@@ -1,10 +1,20 @@
 <h1>Customers</h1>
-<table><tbody>
+<table class='customers'>
+<thead><tr><th>URL</th><th>Country</th><th>M2 Version</th><th>M2 Edition</th></tr></thead>
+<tbody>
 <?=
-df_cc_n(array_map(function(array $c) {$url = $c['url']; return df_tag('tr', [], df_cc_n(
-	df_tag('td', [], df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url)))
-	,df_tag('td', [], df_flag_span($c['country']))
-	,df_tag('td', [], df_my_local() ? $c['version'] : df_magento_version_remote($url))
-));}, df_module_json(dfe_portal_module_name(), 'customers')), df_flag_css())
+df_cc_n(array_map(function(array $c) {
+	/** @var string $url */
+	$url = $c['url'];
+	/** @var array(string => string) $m */
+	$m = df_my_local() ? dfa_select($c, ['version', 'edition']) : df_magento_version_remote($url);
+	return df_tag('tr', [], df_cc_n(
+		df_tag('td', [], df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url)))
+		,df_tag('td', [], df_flag_span($c['country']))
+		,df_tag('td', [], dfa($m, 'version'))
+		,df_tag('td', [], dfa($m, 'edition'))
+	));
+}, df_module_json(dfe_portal_module_name(), 'customers')), df_flag_css())
 ?>
-</tbody></table>
+</tbody>
+</table>

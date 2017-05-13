@@ -2,5 +2,12 @@
 html.df-theme-portal {
 	// 2017-05-10 The primary logo in the top-left side of the pages.
 	nav > ul > li.logo > a {background-image: url('./i/logo-147x40.png');}
-	table.customers th {cursor: pointer;}
+	table.customers {
+		th {cursor: pointer;}
+		// 2017-05-13
+		// I render the country codes
+		// to help the TableSorter JS plugin to order the customers by their countries.
+		// I make the country codes invisible to the visitors, because they are only for the TableSorter.
+		.flag-icon {color: transparent};
+	}
 }

@@ -6,17 +6,18 @@ html.df-theme-portal {
 		th {
 			cursor: pointer;
 			line-height: 16px;
+			// 2017-05-14 Instead of the standard 13px;
+			padding-right: 6px;
 			&:after {
 				display: block;
 				float: right;
 				font-family: FontAwesome;
 				font-weight: normal;
-				// 2016-11-30
-				// line-height + margin-top should be equal to 3.2 rem (32px)
-				//line-height: 2.8rem !important;
-				//margin: 0.4rem 0.9rem 0 0;
-				content: "\f15d";
+				margin-left: 1em;
+				content: "\f0dc";
 			}
+			&.headerSortDown:after {content: "\f15d";}
+			&.headerSortUp:after {content: "\f15e";}
 		}
 		// 2017-05-13
 		// I render the country codes

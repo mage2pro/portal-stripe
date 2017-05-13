@@ -3,7 +3,25 @@ html.df-theme-portal {
 	// 2017-05-10 The primary logo in the top-left side of the pages.
 	nav > ul > li.logo > a {background-image: url('./i/logo-147x40.png');}
 	table.customers {
-		th {cursor: pointer;}
+		th {
+			cursor: pointer;
+			.text {
+				display: block;
+				float: left;
+				line-height: 16px;
+			}
+			.icon:after {
+				display: block;
+				float: right;
+				font-family: FontAwesome;
+				font-weight: normal;
+				// 2016-11-30
+				// line-height + margin-top should be equal to 3.2 rem (32px)
+				//line-height: 2.8rem !important;
+				//margin: 0.4rem 0.9rem 0 0;
+				content: "\f15d";
+			}
+		}
 		// 2017-05-13
 		// I render the country codes
 		// to help the TableSorter JS plugin to order the customers by their countries.

@@ -1,5 +1,9 @@
 <h1>Customers</h1>
+<table><tbody>
 <?=
-df_tag('ul', [], df_cc_n(array_map(function(array $c) {$url = $c['url']; return df_tag('li', [],
-	df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url))
-);}, df_module_json(dfe_portal_module_name(), 'customers'))));
+df_cc_n(array_map(function(array $c) {$url = $c['url']; return df_tag('tr', [], df_cc_n(
+	df_tag('td', [], df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url)))
+	,df_tag('td', [], $c['country'])
+));}, df_module_json(dfe_portal_module_name(), 'customers')), df_flag_css())
+?>
+</tbody></table>

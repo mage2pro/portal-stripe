@@ -15,12 +15,7 @@
 	$('.customers').tablesorter({sortList: [[0,0]]});
 });});</script>
 <table class='content customers'>
-<thead><tr>
-	<th><div class='text'>URL</div><div class='icon'><i/></div></th>
-	<th><div class='text'>Country</div><div class='icon'><i/></div></th>
-	<th><div class='text'>M2 Version</div><div class='icon'><i/></div></th>
-	<th><div class='text'>M2 Edition</div><div class='icon'><i/></div></th>
-</tr></thead>
+<thead><tr><th>URL</th><th>Country</th><th>M2 Version</th><th>M2 Edition</th></tr></thead>
 <tbody>
 <?=
 df_cc_n(array_map(function(array $c) {

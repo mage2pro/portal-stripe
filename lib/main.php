@@ -8,11 +8,11 @@ function dfe_portal_stripe_customers() {return df_cache_get_simple(__FUNCTION__,
 	/** @var array(string => string) $customers */
 	$customers = df_map_r(function(array $a) {return [
 		$a['id'], $a['country']
-	];}, df_oro_get_list('customers', [], [], true, false));
+	];}, df_oro_get_list('customers', [], [], false, false));
 	return array_values(df_map(
 		df_sort_names(
 			array_filter(
-				df_oro_get_list('orders', ['product' => 1], ['website'], true)['included']
+				df_oro_get_list('orders', ['product' => 1], ['website'], false)['included']
 				,function(array $a) {return
 					'extenddfwebsites' === $a['type']
 					&& 'magento_2' === dfa_deep($a, 'relationships/platform/data/id')

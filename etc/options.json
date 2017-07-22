@@ -75,6 +75,11 @@
 		,"description": "Stripe does not require it, but you can require it from your customers."
 	}
 	,{
+		"title": "Prefill the cardholder's name from the billing address?"
+		,"image": "prefill-the-cardholder-name"
+		,"description": ""
+	}
+	,{
 		"title": "Require the billing address?"
 		,"image": "require-the-billing-address"
 		,"description": "If <b>checked</b>, Magento will require the billing address. It is the default Magento behaviour.<br/>If <b>unchecked</b>, Magento will not require the billing address, and even will not ask for it."

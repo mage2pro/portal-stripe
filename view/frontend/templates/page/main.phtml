@@ -5,7 +5,7 @@ The extension integrates your Magento 2 store with the <b><a href='https://strip
 <h2 id='installation'>Installation</h2>
 <pre><code class='bash'>composer require mage2pro/stripe:*
 bin/magento setup:upgrade
-rm -rf pub/static/* && bin/magento setup:static-content:deploy &lt;locale, e.g.: en_GB&gt;
+rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US &lt;additional locales, e.g.: en_GB&gt;
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
 </code></pre>
 <h2 id='settings'>Settings</h2>

@@ -26,7 +26,7 @@ df_cc_n(array_map(function(array $c) {
 	$m = dfa_select($c, ['version', 'edition']);
 	return df_tag('tr', [], df_cc_n(
 		df_tag('td', [], df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url)))
-		,df_tag('td', [], df_flag_span($iso2, $iso2))
+		,df_tag('td', [], df_flag_tag($iso2, $iso2))
 		,df_tag('td', [], dfa($m, 'version'))
 		,df_tag('td', [], dfa($m, 'edition'))
 	));

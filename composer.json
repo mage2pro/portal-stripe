@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/portal-stripe"
-	,"version": "0.5.5"
+	,"version": "0.5.6"
 	,"description": "The stripe.mage2.pro website"
 	,"type": "magento2-module"
 	,"homepage": "https://stripe.mage2.pro"
@@ -13,7 +13,7 @@
 	}]
 	,"require": {
 		"mage2pro/core": ">=2.6.25"
-		,"mage2pro/flag": ">=1.0.3"
+		,"mage2pro/flag": ">=1.0.5"
 		,"mage2pro/oro": ">=0.0.6"
 		,"mage2pro/portal": ">=0.4.3"
 	}

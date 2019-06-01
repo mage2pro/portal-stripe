@@ -24,12 +24,12 @@ df_cc_n(array_map(function(array $c) {
 	/** @var array(string => string) $m */
 	/** 2017-05-14 @todo df_magento_version_remote($url) is too slow. Maybe it should be run by Cron. */
 	$m = dfa_select($c, ['version', 'edition']);
-	return df_tag('tr', [], df_cc_n(
+	return df_tag('tr', [], [
 		df_tag('td', [], df_tag('a', ['href' => $url, 'target' => '_blank'], df_domain($url)))
 		,df_tag('td', [], df_flag_tag($iso2, $iso2))
 		,df_tag('td', [], dfa($m, 'version'))
 		,df_tag('td', [], dfa($m, 'edition'))
-	));
+	]);
 }, dfe_portal_stripe_customers()), df_flag_link(), df_fa_link())
 ?>
 </tbody>

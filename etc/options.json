@@ -57,12 +57,12 @@
 	,{
 		"title": "Description"
 		,"image": "description"
-		,"description": "It will be displayed in the Stripe web interface alongside the payment.<br/>If you use Stripe to send automatic email receipts to your customers, your receipt emails will include the description of the payment(s) that they are describing.<br/>You can use some <a href='https://mage2.pro/t/1834' target='_blank'>variables</a> in the description."
+		,"description": "It is shown in the Stripe web interface alongside the payment.<br/>If you use Stripe to send automatic email receipts to your customers, your receipt emails will include the description of the payment(s) that they are describing.<br/>You can use some <a href='https://mage2.pro/t/1834' target='_blank'>variables</a> in the description."
 	}
 	,{
 		"title": "Dynamic statement descripor"
 		,"image": "dynamic-statement-descripor"
-		,"description": "An arbitrary string to be displayed on your customer's bank card statement.<br/>This may be up to <b>22</b> characters, may not include <b><>\"'</b> characters, and will appear on your customer's statement in capital letters.<br/>Non-ASCII characters are automatically stripped."
+		,"description": "An arbitrary string to be shown on your customer's bank card statement.<br/>This may be up to <b>22</b> characters, may not include <b><>\"'</b> characters, and will appear on your customer's statement in capital letters.<br/>Non-ASCII characters are automatically stripped."
 	}
 	,{
 		"title": "Metadata"

@@ -5,10 +5,9 @@
  * @return array(array(string => string))
  */
 function dfe_portal_stripe_customers() {return df_cache_get_simple(__FUNCTION__, function() {
-	/** @var array(string => string) $customers */
 	$customers = df_map_r(function(array $a) {return [
 		$a['id'], dfa_deep($a, 'relationships/country/data/id')
-	];}, df_oro_get_list('customers')['data']);
+	];}, df_oro_get_list('customers')['data']); /** @var array(string => string) $customers */
 	return array_values(df_map(
 		df_sort_names(
 			array_filter(

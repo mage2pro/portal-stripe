@@ -18,7 +18,7 @@ function dfe_portal_stripe_customers() {return df_cache_get_simple(__FUNCTION__,
 				;}
 			), null, function(array $a) {return dfa_deep($a, 'attributes/domain');}
 		), function(array $a) use($customers) {$at = $a['attributes']; return [
-			// 2017-07-13 From now on, country can be defined not only for a customer, but for a website too.
+			# 2017-07-13 From now on, country can be defined not only for a customer, but for a website too.
 			'country' => dfa_deep($a, 'relationships/country/data/id',
 				$customers[dfa_deep($a, 'relationships/dfcustomer_websites/data/id')]
 			)

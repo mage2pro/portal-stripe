@@ -13,8 +13,7 @@ function dfe_portal_stripe_customers():array {return df_cache_get_simple(__FUNCT
 			array_filter(
 				df_oro_get_list('orders', ['product' => 1], ['website'])['included']
 				,function(array $a) {return
-					'extenddfwebsites' === $a['type']
-					&& 'magento_2' === dfa_deep($a, 'relationships/platform/data/id')
+					'extenddfwebsites' === $a['type'] && 'magento_2' === dfa_deep($a, 'relationships/platform/data/id')
 				;}
 			), '', function(array $a) {return dfa_deep($a, 'attributes/domain');}
 		), function(array $a) use($customers) {$at = $a['attributes']; return [

@@ -16,7 +16,7 @@ function dfe_portal_stripe_customers():array {return df_cache_get_simple(__FUNCT
 					'extenddfwebsites' === $a['type'] && 'magento_2' === dfa_deep($a, 'relationships/platform/data/id')
 				;}
 			), '', function(array $a):string {return dfa_deep($a, 'attributes/domain');}
-		), function(array $a) use($customers) {$at = $a['attributes']; return [
+		), function(array $a) use($customers):array {$at = $a['attributes']; return [
 			# 2017-07-13 From now on, country can be defined not only for a customer, but for a website too.
 			'country' => dfa_deep($a, 'relationships/country/data/id',
 				$customers[dfa_deep($a, 'relationships/dfcustomer_websites/data/id')]

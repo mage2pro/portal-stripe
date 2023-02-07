@@ -16,7 +16,7 @@
 <thead><tr><th>URL</th><th>Country</th><th>M2 Version</th><th>M2 Edition</th></tr></thead>
 <tbody>
 <?=
-df_cc_n(array_map(function(array $c) {
+df_cc_n(array_map(function(array $c):string {
 	$iso2 = $c['country']; /** @var string $iso2 */
 	$url = $c['url']; /** @var string $url */
 	/** 2017-05-14 @todo df_magento_version_remote($url) is too slow. Maybe it should be run by Cron. */

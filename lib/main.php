@@ -9,7 +9,7 @@ function dfe_portal_stripe_customers():array {return df_cache_get_simple(__FUNCT
 		$a['id'], dfa_deep($a, 'relationships/country/data/id')
 	];}, df_oro_get_list('customers')['data']); /** @var array(string => string) $customers */
 	return array_values(df_map(
-		df_sort_names(
+		df_sort_l(
 			array_filter(
 				df_oro_get_list('orders', ['product' => 1], ['website'])['included']
 				,function(array $a):bool {return
